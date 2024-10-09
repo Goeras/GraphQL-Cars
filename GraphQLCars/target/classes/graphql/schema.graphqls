@@ -1,0 +1,31 @@
+
+
+type Car{
+    id: ID!
+    brand: String!
+    model: String!
+    modelYear: Int!
+    details: String!
+}
+
+input CarInput{
+    id: ID!
+    brand: String!
+    model: String!
+    modelYear: Int!
+    details: String!
+}
+
+type Query{
+    hello: String
+    getCarById(id: ID!): Car
+    getAllCars:[Car]
+}
+
+type Mutation {
+    #addCar(model: String!, brand: String!, modelYear: Int!, details: String!): Car
+    addCar(car: CarInput!): Car
+    #updateCar(id: ID!, model: String!, brand: String!, modelYear: Int!, details: String!): Car
+    updateCar(car: CarInput!): Car
+    deleteCar(id: ID!): Boolean
+}

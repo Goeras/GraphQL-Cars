@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS cars;
+
+CREATE TABLE cars (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    brand VARCHAR(255) NOT NULL,
+    model VARCHAR(255) NOT NULL,
+    model_year INT NOT NULL,
+    details VARCHAR(255) NOT NULL
+);
