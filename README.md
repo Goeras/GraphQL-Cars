@@ -1,7 +1,7 @@
 # GraphQL-Cars
 Simple Backend API-project with Spring Boot, GraphQL and H2 Database
 
-Runs on http://localhost:8181/graphql
+Runs on localhost:8181/graphql
 
 JSON example-querys:
 {
