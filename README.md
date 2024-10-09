@@ -4,6 +4,7 @@ Simple Backend API-project with Spring Boot, GraphQL and H2 Database
 Runs on localhost:8181/graphql
 
 JSON example-querys:
+
 {
   "query": "{ getAllCars { id brand model modelYear details } }"
 }
